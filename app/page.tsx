@@ -25,13 +25,8 @@ export default function Home() {
     <main className="min-h-screen">
       <div
         ref={cursorRef}
-        className="cursor fixed transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-      >
-        <div className="latitudes"></div>
-        <div className="latitudes"></div>
-        <div className="latitudes"></div>
-        <div className="latitudes"></div>
-      </div>
+        className="sphere fixed transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+      ></div>
     </main>
   );
 }

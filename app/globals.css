@@ -27,33 +27,18 @@ body {
     linear-gradient(rgba(128, 128, 128, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
   background-size: 10px 10px;
+  overflow: hidden;
 }
 
-.cursor {
+.sphere {
   z-index: 999;
+  position: absolute;
   background: var(--foreground);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   pointer-events: none;
-  animation: colors 5s infinite;
+  mix-blend-mode: color-dodge;
+  box-shadow: 0 0 15px 20px var(--foreground);
 }
 
-
-.cursor:before {
-  content: '';
-  position: absolute;
-  transform: translate(-30%, -30%);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  opacity: 0.2;
-}
-
-.latitudes {
-  position: absolute;
-  width: 1px;
-  height: 50px;
-  color: var(--foreground);
-  background-size: 10px 10px;
-}
