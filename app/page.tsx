@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { ProfilePic } from "./components/ProfilePic";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -25,8 +26,9 @@ export default function Home() {
     <main className="min-h-screen">
       <div
         ref={cursorRef}
-        className="sphere fixed transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+        className="sphere transform -translate-x-1/2 -translate-y-1/2"
       ></div>
+      <ProfilePic />
     </main>
   );
 }
