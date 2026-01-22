@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ProfilePic } from "./components/ProfilePic";
 import { About } from "./components/About";
+import { GithubContributions } from "./components/GithubContributions";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -32,6 +33,7 @@ export default function Home() {
       <div className="flex items-center justify-center">
         <ProfilePic />
         <About />
+        <GithubContributions />
       </div>
     </main>
   );

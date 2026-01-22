@@ -26,7 +26,7 @@ body {
   background-image: 
     linear-gradient(rgba(128, 128, 128, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
-  background-size: 10px 10px;
+  background-size: 13px 13px;
   overflow: hidden;
 }
 
@@ -41,4 +41,3 @@ body {
   mix-blend-mode: color-dodge;
   box-shadow: 0 0 15px 20px var(--foreground);
 }
-
