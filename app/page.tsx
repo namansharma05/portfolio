@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { ProfilePic } from "./components/ProfilePic";
+import { About } from "./components/About";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -28,7 +29,10 @@ export default function Home() {
         ref={cursorRef}
         className="sphere transform -translate-x-1/2 -translate-y-1/2"
       ></div>
-      <ProfilePic />
+      <div className="flex items-center justify-center">
+        <ProfilePic />
+        <About />
+      </div>
     </main>
   );
 }
