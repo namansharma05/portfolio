@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { ProfilePic } from "./components/ProfilePic";
 import { About } from "./components/About";
 import { GithubContributions } from "./components/GithubContributions";
+import { Technologies } from "./components/Technologies";
 
 export default function Home() {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -34,6 +35,7 @@ export default function Home() {
         <ProfilePic />
         <About />
         <GithubContributions />
+        <Technologies />
       </div>
     </main>
   );
