@@ -12,6 +12,8 @@ import { SiRust } from "react-icons/si";
 import { FaAnchor } from "react-icons/fa";
 export const Technologies = () => {
   const technologies = [
+    { name: "Rust", icon: SiRust },
+    { name: "Anchor", icon: FaAnchor },
     { name: "Next.js", icon: RiNextjsFill },
     { name: "Node.js", icon: RiNodejsLine },
     { name: "Express.js", icon: SiExpress },
@@ -22,12 +24,10 @@ export const Technologies = () => {
     { name: "TypeScript", icon: SiTypescript },
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "Git", icon: SiGit },
-    { name: "Rust", icon: SiRust },
-    { name: "Anchor", icon: FaAnchor },
   ];
 
   return (
-    <div className="absolute top-[95%] left-1/2 -translate-x-1/2 w-full max-w-6xl pb-20">
+    <div className="absolute top-[95%] left-1/2 -translate-x-1/2 w-full max-w-6xl px-8 pb-20">
       <div className="text-2xl font-bold text-center mb-10">
         Technologies I Use
       </div>
