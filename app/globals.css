@@ -27,17 +27,14 @@ body {
     linear-gradient(rgba(128, 128, 128, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
   background-size: 13px 13px;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 .sphere {
-  z-index: 999;
-  position: absolute;
-  background: var(--foreground);
-  width: 50px;
-  height: 50px;
+  background: gray;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
-  pointer-events: none;
   mix-blend-mode: color-dodge;
   box-shadow: 0 0 15px 20px var(--foreground);
 }
