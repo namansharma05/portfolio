@@ -27,29 +27,27 @@ export const Technologies = () => {
   ];
 
   return (
-    <div className="absolute top-[95%] left-1/2 -translate-x-1/2 w-full max-w-6xl px-8 pb-20">
+    <div className="w-full max-w-6xl mx-auto px-4">
       <div className="text-2xl font-bold text-center mb-10">
         Technologies I Use
       </div>
-      <div className="w-[70%] mx-auto">
-        <div className="grid grid-cols-4 gap-4">
-          {technologies.map(({ name, icon: Icon }) => (
-            <div
-              key={name}
-              className="flex flex-col items-center gap-2 group cursor-default"
-            >
-              <div className="p-3 bg-gray-100 dark:bg-zinc-800/50 rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-700">
-                <Icon
-                  size={32}
-                  className="text-zinc-700 dark:text-zinc-300 transition-colors duration-300"
-                />
-              </div>
-              <div className="text-sm font-medium text-zinc-500 transition-colors duration-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
-                {name}
-              </div>
+      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
+        {technologies.map(({ name, icon: Icon }) => (
+          <div
+            key={name}
+            className="flex flex-col items-center gap-2 group cursor-default"
+          >
+            <div className="p-3 bg-gray-100 dark:bg-zinc-800/50 rounded-2xl transition-all duration-300 group-hover:scale-110 group-hover:bg-zinc-200 dark:hover:bg-zinc-700">
+              <Icon
+                size={32}
+                className="text-zinc-700 dark:text-zinc-300 transition-colors duration-300"
+              />
             </div>
-          ))}
-        </div>
+            <div className="text-sm font-medium text-zinc-500 transition-colors duration-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-100">
+              {name}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

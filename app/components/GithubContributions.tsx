@@ -2,8 +2,12 @@ import { GitHubCalendar } from "react-github-calendar";
 
 export const GithubContributions = () => {
   return (
-    <div className="max-w-[50%] md:max-w-[70%] lg:max-w-[100%]">
-      <GitHubCalendar username={process.env.NEXT_PUBLIC_GITHUB_USERNAME!} />
+    <div className="w-full max-w-4xl mx-auto px-4">
+      <div className="overflow-x-auto custom-scrollbar flex justify-center py-4">
+        <div className="min-w-fit">
+          <GitHubCalendar username={process.env.NEXT_PUBLIC_GITHUB_USERNAME!} />
+        </div>
+      </div>
     </div>
   );
 };

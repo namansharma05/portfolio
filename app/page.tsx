@@ -8,15 +8,23 @@ import { Technologies } from "./components/Technologies";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="flex flex-col items-center max-w-full mt-[5%]">
-        <div className="flex lg:flex-row md:flex-col flex-col lg:gap-x-20 md:gap-y-10 gap-y-5 justify-center items-center">
-          <ProfilePic />
-          <About />
+      <div className="flex flex-col items-center w-full px-4 py-12 lg:py-24">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
+          <div className="flex justify-center items-center">
+            <ProfilePic />
+          </div>
+          <div className="flex justify-center lg:justify-start items-center">
+            <About />
+          </div>
         </div>
-        <div className="flex justify-center mt-12">
+
+        <div className="w-full mt-16 lg:mt-24">
           <GithubContributions />
         </div>
-        <Technologies />
+
+        <div className="w-full mt-16 lg:mt-24">
+          <Technologies />
+        </div>
       </div>
     </main>
   );
