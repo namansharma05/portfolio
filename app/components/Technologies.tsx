@@ -31,8 +31,8 @@ export const Technologies = () => {
       <div className="text-2xl font-bold text-center mb-10">
         Technologies I Use
       </div>
-      <div className="max-h-[350px] px-4">
-        <div className="grid grid-cols-4 gap-3">
+      <div className="w-[70%] mx-auto">
+        <div className="grid grid-cols-4 gap-4">
           {technologies.map(({ name, icon: Icon }) => (
             <div
               key={name}

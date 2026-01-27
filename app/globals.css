@@ -36,7 +36,7 @@ body {
   height: 26px;
   border-radius: 50%;
   mix-blend-mode: color-dodge;
-  box-shadow: 0 0 15px 20px var(--foreground);
+  box-shadow: 0 0 10px 10px var(--foreground);
 }
 
 .custom-scrollbar::-webkit-scrollbar {
