@@ -4,6 +4,7 @@ import { ProfilePic } from "./components/ProfilePic";
 import { About } from "./components/About";
 import { GithubContributions } from "./components/GithubContributions";
 import { Technologies } from "./components/Technologies";
+import { Projects } from "./components/Projects";
 
 export default function Home() {
   return (
@@ -18,12 +19,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full mt-16 lg:mt-24">
+        <div className="w-full mt-10 lg:mt-10">
           <GithubContributions />
         </div>
 
-        <div className="w-full mt-16 lg:mt-24">
+        <div className="w-full mt-10 lg:mt-10">
           <Technologies />
+        </div>
+        <div className="w-full mt-10 lg:mt-10">
+          <Projects />
         </div>
       </div>
     </main>

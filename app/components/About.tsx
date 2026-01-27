@@ -5,16 +5,16 @@ import { FaXTwitter } from "react-icons/fa6";
 export const About = () => {
   return (
     <div className="max-w-fit flex flex-col items-center lg:items-start text-center lg:text-left">
-      <h1 className="max-w-fit text-4xl font-bold">
+      <h1 className="max-w-fit lg:text-4xl md:text-3xl text-2xl font-bold">
         {process.env.NEXT_PUBLIC_NAME}
       </h1>
-      <h2 className="max-w-fit text-xl">
+      <h2 className="max-w-fit lg:text-xl md:text-lg text-base">
         {process.env.NEXT_PUBLIC_DESIGNATION}
       </h2>
-      <p className="max-w-[52ch] text-gray-500 text-lg mt-4 px-4 lg:px-0">
+      <p className="max-w-[45ch] text-gray-500 lg:text-lg md:text-base text-sm lg:text-justify mt-4 px-4 lg:px-0">
         {process.env.NEXT_PUBLIC_ABOUT_ME_DESCRIPTION}
       </p>
-      <div className="max-w-fit flex justify-center lg:justify-start gap-4 mt-10">
+      <div className="max-w-fit flex justify-center lg:justify-start gap-4 mt-4">
         <a
           href="https://github.com/namansharma05"
           target="_blank"
